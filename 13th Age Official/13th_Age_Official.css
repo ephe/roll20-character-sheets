@@ -1069,13 +1069,14 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 
 .sheet-rolltemplate-ba .sheet-header
 {
-    width: 230px;
+    width: 225px;
     margin-left: -30px;
     background-color: #028401;
     display: inline-block;
     text-align: left;
     border-top: 5px solid #028401;
     border-bottom: 5px solid #028401;
+    padding-left: 5PX;
     height: 16px;
     color: white;
     position: relative;
@@ -1084,7 +1085,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 .sheet-rolltemplate-ba .sheet-left,
 .sheet-rolltemplate-power .sheet-left
 {
-    margin-left: 5px;
+    /*margin-left: 5px;*/
 }
 
 .sheet-rolltemplate-ba .sheet-right,
@@ -1106,7 +1107,9 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 .sheet-rolltemplate-power .sheet-row
 {
     display: block;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
+    padding: 0 5px;
+    line-height: 1.5em;
 }
 
 .sheet-rolltemplate-power .sheet-header
@@ -1191,8 +1194,8 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 .sheet-iconrelationship input[type=radio]:checked ~ input,
 .sheet-iconrelationship input[type=radio]:checked ~ div input,
 .sheet-iconrelationship input[type=radio]:checked ~ div select,
-.sheet-background input[type=radio]:checked ~ input,
-.sheet-background input[type=radio]:checked ~ select,
+.sheet-background input[type=radio]:checked ~ input
+,.sheet-background input[type=radio]:checked ~ select,
 .sheet-weapon input[type=radio]:checked ~ input,
 .sheet-weapon input[type=radio]:checked ~ select
 {
