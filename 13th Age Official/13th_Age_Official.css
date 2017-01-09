@@ -170,9 +170,9 @@ input {
     padding-bottom:0px;
     margin: 0px;
     position: relative;
-    top: 18px;
-    right: 75px;
-    line-height: 8px;
+    top: 35px;
+    right: 53px;
+    line-height: 12px;
 }
 
 .sheet-derived button[type=roll].sheet-derlabel {
@@ -293,15 +293,12 @@ input {
 .sheet-weapon select.sheet-weapon {
     line-height: 10px;
     width: 42px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     padding: 0px;
 }
 
 .sheet-recoverycontainer {
     display:block;
-    margin-top: -10px;
+    margin-top: 5px;
     color: #014A89;
 }
 
@@ -353,7 +350,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-body {
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .sheet-body .sheet-header {
@@ -402,12 +399,8 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     margin-bottom: 0px;
     width: 60px;
     line-height: 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     padding: 0px;
-    border: 0px;
-    height: 18px;   
+    height: 22px;   
 }
 
 .sheet-iconrelationship .sheet-short {
@@ -488,15 +481,12 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-weapon select.sheet-weapon {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid black;
     margin-bottom: 0px;
+    margin-left: 24px;
     padding: 0px;
-    height: 18px;
+    height: 22px;
     text-align: center;
-    width: 30px;
+    width: 48px;
 }
 
 .sheet-power .sheet-stat {
@@ -613,12 +603,8 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     margin-bottom: 0px;
     width: 100px;
     line-height: 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     padding: 0px;
-    border: 0px;
-    height: 18px;
+    height: 22px;
 }
 
 .sheet-At-Will:checked ~ .sheet-header,
@@ -924,7 +910,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     text-align: center;
     border-top: 5px solid #014A89;
     border-bottom: 5px solid #014A89;
-    height: 16px;
+    /*height: 16px;*/
 }
 
 .withoutavatars .sheet-rolltemplate-attr .sheet-header, 
@@ -967,6 +953,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 {
     width: 228px;
     margin-left: -30px;
+    margin-top: 0;
     background-color: white;
     border: 1px solid black;
 }
@@ -995,6 +982,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     display: inline-block;
     font-weight: bold;
     margin-right: -5px;
+    margin-left: 5px;
 }
 
 .sheet-rolltemplate-deathsave .sheet-body .sheet-part {
@@ -1114,55 +1102,44 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 
 .sheet-rolltemplate-power .sheet-header
 {
-    width: 225px;
+    width: 220px;
     margin-left: -30px;
     display: inline-block;
     text-align: left;
     height: 16px;
     color: white;
+    padding: 4px;
+    border: 1px solid black;
+    border-bottom: 0;
     position: relative;
 }
 
 .sheet-rolltemplate-power .sheet-header.sheet-atwill {
     background-color: #028401;
-    border: 5px solid #028401;
-    border-left: 0px;
 }
 
 .sheet-rolltemplate-power .sheet-header.sheet-class {
     background-color: #A06D39;
-    border: 5px solid #A06D39;
-    border-left: 0px;
 }
 
 .sheet-rolltemplate-power .sheet-header.sheet-racial-encounter {
     background-color: #891101;
-    border: 5px solid #891101;
-    border-left: 0px;
 }
 
 .sheet-rolltemplate-power .sheet-header.sheet-recharge-daily {
     background-color: #000000;
-    border: 5px solid #000000;
-    border-left: 0px;
 }
 
 .sheet-rolltemplate-power .sheet-header.sheet-spell {
     background-color: #014A89;
-    border: 5px solid #014A89;
-    border-left: 0px;
 }
 
 .sheet-rolltemplate-power .sheet-header.sheet-magicitem {
     background-color: #D58C1A;
-    border: 5px solid #D58C1A;
-    border-left: 0px;
 }
 
 .sheet-rolltemplate-power .sheet-header.sheet-custom {
     background-color: #7f2e7e;
-    border: 5px solid #7f2e7e;
-    border-left: 0px;
 }
 
 .sheet-power .sheet-header input,
@@ -1257,7 +1234,7 @@ button[type=roll]:hover *
 
 .sheet-deathsavecontainer button[type=roll].sheet-init {
     top: 0px;
-    left: 0px;
+    left: -3px;
     width: 75px;
 }
 
