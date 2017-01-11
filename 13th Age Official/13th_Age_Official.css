@@ -96,6 +96,7 @@ input {
     width: 135px;
     display: inline-block;
     font-size: 14px;
+    padding-left: 2px;
 }
 
 .sheet-meta input[type=number] {
@@ -171,29 +172,8 @@ input {
     margin: 0px;
     position: relative;
     top: 35px;
-    right: 53px;
+    left: 53px;
     line-height: 12px;
-}
-
-.sheet-derived button[type=roll].sheet-derlabel {
-    width: 60px;
-    padding-right: 20px;
-    margin-left: 0px;
-    padding-left: 0px;
-}
-
-.sheet-derived button[type=roll].sheet-derlabel.sheet-recovery {
-    width: 65px;
-    padding-right: 0px;
-}
-
-.sheet-body button[type=roll].sheet-attrlabel {
-    white-space: nowrap;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    height: 18px;
-    border-top: 0px;
 }
 
 .sheet-attributes .sheet-attrmod {
@@ -205,6 +185,40 @@ input {
     width: 30px;
     margin-left: -5px;
     border-radius: 0px;
+}
+
+.sheet-derived button[type=roll].sheet-derlabel {
+    width: 60px;
+    padding-right: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.sheet-derived button[type=roll].sheet-derlabel.sheet-recovery {
+    width: 70px;
+    padding-right: 5px;
+}
+
+.sheet-derived .sheet-derlabel.plus {
+    width: 10px;
+    padding-right: 0;
+    margin-left: -5px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.sheet-derived input.sheet-recovery {
+    width: 73px;
+    border-right-width: 35px;
+}
+
+.sheet-body button[type=roll].sheet-attrlabel {
+    white-space: nowrap;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 18px;
+    border-top: 0px;
 }
 
 .sheet-derived .sheet-derlabel {
@@ -292,13 +306,12 @@ input {
 .sheet-derived select.sheet-recovery,
 .sheet-weapon select.sheet-weapon {
     line-height: 10px;
-    width: 42px;
+    width: 57px;
     padding: 0px;
 }
 
-.sheet-recoverycontainer {
+.sheet-derived .sheet-recoverycontainer {
     display:block;
-    margin-top: 5px;
     color: #014A89;
 }
 
@@ -353,6 +366,10 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     margin-top: 70px;
 }
 
+.sheet-body .sheet-bodycontainer {
+    margin-bottom: 15px;
+}
+
 .sheet-body .sheet-header {
     width: 100%;
     background-color: #014A89;
@@ -360,26 +377,30 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     border: 5px solid #014A89;
     font-size: 14px;
     text-align: center;
-    margin-bottom: 5px;
 }
 
 .sheet-body textarea {
     width: 100%;
     max-width: 100%;
     height: 65px;
-    margin-top: -5px;
+    margin-bottom: 0;
+}
+
+.sheet-icon-relationship {
+    margin: 5px 0;
 }
 
 .sheet-background,
 .sheet-weapon {
     line-height: 23px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .sheet-background input[type="text"],
 .sheet-weapon input[type="text"] {
     border-bottom: 1px solid black;
     display: inline-block;
+    line-height: 23px;
 }
 
 .sheet-background .sheet-title {
@@ -400,10 +421,10 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 
 .sheet-iconrelationship select {
     margin-bottom: 0px;
+    margin-top: 3px;
     width: 85px;
-    line-height: 10px;
     padding: 0px;
-    height: 22px;   
+    height: 23px;   
 }
 
 .sheet-iconrelationship .sheet-short {
@@ -455,12 +476,8 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     text-align: center;
 }
 
-.sheet-column2 .sheet-bodycontainer {
-    margin-bottom: 10px;
-}
-
 .sheet-power {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .sheet-power .sheet-atwill {
@@ -480,14 +497,15 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-power .sheet-body {
-    margin: 0px;
+    margin-top: 2px;
 }
 
 .sheet-weapon select.sheet-weapon {
     margin-bottom: 0px;
     margin-left: 24px;
+    margin-top: 3px;
     padding: 0px;
-    height: 22px;
+    height: 23px;
     text-align: center;
     width: 48px;
 }
@@ -711,8 +729,6 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     top: 0px;
 }
 
-
-
 .sheet-power .sheet-header input[type=checkbox] {
     width: 13px;
     display: none;
@@ -741,6 +757,10 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 .sheet-Uses:checked ~ .sheet-4:checked ~ .sheet-header input[type=checkbox].sheet-3,
 .sheet-Uses:checked ~ .sheet-4:checked ~ .sheet-header input[type=checkbox].sheet-4 {
     display: inline-block;
+}
+
+.sheet-power .sheet-repbody {
+    line-height: 20px;
 }
 
 .sheet-power .sheet-repbody .sheet-left input {
@@ -901,6 +921,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-header, 
+.sheet-rolltemplate-def .sheet-header,
 .sheet-rolltemplate-rec .sheet-header, 
 .sheet-rolltemplate-icon .sheet-header, 
 .sheet-rolltemplate-init .sheet-header,
@@ -913,10 +934,10 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     text-align: center;
     border-top: 5px solid #014A89;
     border-bottom: 5px solid #014A89;
-    /*height: 16px;*/
 }
 
 .withoutavatars .sheet-rolltemplate-attr .sheet-header, 
+.withoutavatars .sheet-rolltemplate-def .sheet-header, 
 .withoutavatars .sheet-rolltemplate-rec .sheet-header, 
 .withoutavatars .sheet-rolltemplate-icon .sheet-header, 
 .withoutavatars .sheet-rolltemplate-init .sheet-header,
@@ -928,6 +949,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-headerlabel,
+.sheet-rolltemplate-def .sheet-headerlabel,
 .sheet-rolltemplate-rec .sheet-headerlabel,
 .sheet-rolltemplate-icon .sheet-headerlabel,
 .sheet-rolltemplate-init .sheet-headerlabel,
@@ -937,6 +959,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-headerdivider,
+.sheet-rolltemplate-def .sheet-headerdivider,
 .sheet-rolltemplate-rec .sheet-headerdivider,
 .sheet-rolltemplate-icon .sheet-headerdivider,
 .sheet-rolltemplate-init .sheet-headerdivider,
@@ -947,6 +970,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-body,
+.sheet-rolltemplate-def .sheet-body,
 .sheet-rolltemplate-rec .sheet-body,
 .sheet-rolltemplate-icon .sheet-body,
 .sheet-rolltemplate-init .sheet-body,
@@ -962,6 +986,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .withoutavatars .sheet-rolltemplate-attr .sheet-body,
+.withoutavatars .sheet-rolltemplate-def .sheet-body,
 .withoutavatars .sheet-rolltemplate-rec .sheet-body,
 .withoutavatars .sheet-rolltemplate-icon .sheet-body,
 .withoutavatars .sheet-rolltemplate-init .sheet-body,
@@ -977,6 +1002,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-body .sheet-part,
+.sheet-rolltemplate-def .sheet-body .sheet-part,
 .sheet-rolltemplate-rec .sheet-body .sheet-part,
 .sheet-rolltemplate-icon .sheet-body .sheet-part,
 .sheet-rolltemplate-init .sheet-body .sheet-part
@@ -996,6 +1022,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-body .sheet-part:not(:first-child), 
+.sheet-rolltemplate-def .sheet-body .sheet-part:not(:first-child), 
 .sheet-rolltemplate-rec .sheet-body .sheet-part:not(:first-child), 
 .sheet-rolltemplate-icon .sheet-body .sheet-part:not(:first-child), 
 .sheet-rolltemplate-init .sheet-body .sheet-part:not(:first-child),
@@ -1005,6 +1032,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-body .sheet-part span,
+.sheet-rolltemplate-def .sheet-body .sheet-part span,
 .sheet-rolltemplate-rec .sheet-body .sheet-part span,
 .sheet-rolltemplate-icon .sheet-body .sheet-part span,
 .sheet-rolltemplate-init .sheet-body .sheet-part span,
@@ -1015,6 +1043,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-body .sheet-part .inlinerollresult,
+.sheet-rolltemplate-def .sheet-body .sheet-part .inlinerollresult,
 .sheet-rolltemplate-rec .sheet-body .sheet-part .inlinerollresult,
 .sheet-rolltemplate-icon .sheet-body .sheet-part .inlinerollresult,
 .sheet-rolltemplate-init .sheet-body .sheet-part .inlinerollresult,
@@ -1029,6 +1058,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-body .sheet-partspacer,
+.sheet-rolltemplate-def .sheet-body .sheet-partspacer,
 .sheet-rolltemplate-rec .sheet-body .sheet-partspacer,
 .sheet-rolltemplate-icon .sheet-body .sheet-partspacer,
 .sheet-rolltemplate-init .sheet-body .sheet-partspacer,
@@ -1038,6 +1068,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-rolltemplate-attr .sheet-body .sheet-result,
+.sheet-rolltemplate-def .sheet-body .sheet-result,
 .sheet-rolltemplate-rec .sheet-body .sheet-result,
 .sheet-rolltemplate-icon .sheet-body .sheet-result,
 .sheet-rolltemplate-init .sheet-body .sheet-result,
@@ -1053,30 +1084,28 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
     font-family: pictos;   
 }
 
+.sheet-rolltemplate-def .sheet-body {
+    display: table;
+}
+
 .sheet-rolltemplate-power .sheet-body {
-    padding-bottom: 5px;
+    padding: 2px 0 5px 0;
     position: relative;
 }
 
 .sheet-rolltemplate-ba .sheet-header
 {
-    width: 225px;
+    width: 220px;
     margin-left: -30px;
     background-color: #028401;
     display: inline-block;
     text-align: left;
-    border-top: 5px solid #028401;
-    border-bottom: 5px solid #028401;
-    padding-left: 5PX;
+    border: 1px solid #000;
+    border-bottom: 0;
+    padding: 4PX;
     height: 16px;
     color: white;
     position: relative;
-}
-
-.sheet-rolltemplate-ba .sheet-left,
-.sheet-rolltemplate-power .sheet-left
-{
-    /*margin-left: 5px;*/
 }
 
 .sheet-rolltemplate-ba .sheet-right,
@@ -1098,7 +1127,6 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 .sheet-rolltemplate-power .sheet-row
 {
     display: block;
-    /*white-space: nowrap;*/
     padding: 0 5px;
     line-height: 1.5em;
 }
