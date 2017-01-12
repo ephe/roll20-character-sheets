@@ -278,6 +278,7 @@ input {
     vertical-align: top;
     width: 35px;
     margin-left: -5px;
+    background-color: white;
 }
 
 .sheet-derived .sheet-hpbox {
@@ -320,9 +321,20 @@ input {
     padding: 0px;
 }
 
+.sheet-derived .sheet-recrollcontainer {
+    background-color: #014A89;
+
+}
+
 .sheet-derived .sheet-recoverycontainer {
     display:block;
     color: #014A89;
+}
+
+.sheet-derived .sheet-recoverycontainer .sheet-recovercounters {
+    display:inline-block;
+    width: 120px;
+    float:right;
 }
 
 input[type="radio"].sheet-normal {
@@ -678,6 +690,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 
 .sheet-suboption {
     display: none;
+    margin-bottom: 3px;
 }
 
 .sheet-poweroptions-check:checked ~ .sheet-Class:checked ~ .sheet-classtype,
@@ -1281,4 +1294,21 @@ button[type=roll]:hover *
 
 .sheet-deathsavecontainer input[type=checkbox] {
     width: 12px;
+}
+
+.sheet-mitem-totals {
+    margin-left: 2px;
+}
+
+.sheet-mitem-header {
+    font-weight: bold;
+}
+
+.sheet-mitem-totals .sheet-row {
+    margin: 5px 0;
+}
+
+.sheet-mitem-totals input[type="number"] {
+    float: right;
+    border-bottom: 1px solid black;
 }
