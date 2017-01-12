@@ -5,8 +5,8 @@
 .sheet-options-check {
     opacity: 0;    
     position: absolute;
-    top: 60px;
-    right: 110px;
+    top: 50px;
+    right: 70px;
     width: 18px;
     height: 18px;
     z-index: 2;
@@ -14,8 +14,8 @@
 
 .sheet-options-check + span {
     position: absolute;
-    top: 60px;
-    right: 110px;
+    top: 50px;
+    right: 70px;
     white-space: nowrap;
     width: 18px;
     height: 18px;
@@ -165,20 +165,18 @@ input {
     background-color: #014A89;
     color: white;
     border: 1px solid #014A89;
-    font-size: 9px;
-    width: 60px;
+    font-size: 11px;
+    width: 68px;
     background-image: none;
     text-shadow:none;
     box-shadow:none;
-    border-radius:10px;
-    padding-top:0px;
-    padding-right:0px;
-    padding-bottom:0px;
+    border-radius:4px;
+    padding:0 5px;
     margin: 0px;
     position: relative;
-    top: 35px;
-    left: 53px;
-    line-height: 12px;
+    top: 43px;
+    left: 41px;
+    line-height: 25px;
 }
 
 .sheet-attributes .sheet-attrmod {
@@ -1281,15 +1279,15 @@ button[type=roll]:hover *
 
 .sheet-deathsavecontainer {
     position: absolute;
-    top: 35px;
-    left: 60px;
-    width: 200px;
+    top: 43px;
+    left: 50px;
+    width: 165px;
 }
 
 .sheet-deathsavecontainer button[type=roll].sheet-init {
     top: 0px;
-    left: -3px;
-    width: 75px;
+    left: -2px;
+    width: 85px;
 }
 
 .sheet-deathsavecontainer input[type=checkbox] {
@@ -1298,6 +1296,7 @@ button[type=roll]:hover *
 
 .sheet-mitem-totals {
     margin-left: 2px;
+    margin-bottom: 10px;
 }
 
 .sheet-mitem-header {
@@ -1311,4 +1310,26 @@ button[type=roll]:hover *
 .sheet-mitem-totals input[type="number"] {
     float: right;
     border-bottom: 1px solid black;
+}
+
+.sheet-magicitem {
+
+}
+
+input.sheet-mitem, textarea.sheet-mitem {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"].sheet-mitem {
+    margin: -2px 145px 0 0;
+}
+
+input[type="text"].sheet-mitem {
+    display: inline;
+    width: 200px;
+    border-bottom: 1px solid black;
+}
+
+.sheet-bodycontainer .repcontrol {
+    min-height: 28px;
 }
