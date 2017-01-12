@@ -157,8 +157,7 @@ input {
 .sheet-attributes button[type=roll].sheet-init::before,
 .sheet-derived button[type=roll].sheet-derlabel::before,
 .sheet-power button[type=roll].sheet-powerlabel::before,
-.sheet-body button[type=roll].sheet-attrlabel::before,
-{
+.sheet-body button[type=roll].sheet-attrlabel::before {
     content: "" !important;
 }
 
@@ -323,18 +322,18 @@ input {
 
 .sheet-derived .sheet-recrollcontainer {
     background-color: #014A89;
-
+    height: 28px;
 }
 
 .sheet-derived .sheet-recoverycontainer {
     display:block;
     color: #014A89;
+    width: 207px;
+    margin-top: 8px;
 }
 
-.sheet-derived .sheet-recoverycontainer .sheet-recovercounters {
-    display:inline-block;
-    width: 120px;
-    float:right;
+.sheet-derived .sheet-recoverycontainer .sheet-9 {
+    margin-left: 83px !important;
 }
 
 input[type="radio"].sheet-normal {
@@ -343,7 +342,7 @@ input[type="radio"].sheet-normal {
     width: 15px;
     cursor: pointer;
     z-index: 10;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 input[type="radio"].sheet-normal + span::before {
@@ -352,6 +351,7 @@ input[type="radio"].sheet-normal + span::before {
     text-align: middle;
     display: inline-block;
     vertical-align: middle;
+    margin-top: -10px;
     
     -moz-box-shadow: 0 0 0px #000;
     -webkit-box-shadow: 0 0 0px #000;
