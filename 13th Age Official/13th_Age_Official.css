@@ -93,13 +93,13 @@ input {
 }
 
 .sheet-meta .sheet-label {
-    width: 40px;
+    width: 50px;
     display: inline-block;
 }
 
 .sheet-meta input {
     border-bottom: 1px solid black;  
-    width: 135px;
+    width: 125px;
     display: inline-block;
     font-size: 14px;
     padding-left: 2px;
@@ -383,7 +383,7 @@ input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before {
 }
 
 .sheet-body {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .sheet-body .sheet-bodycontainer {
